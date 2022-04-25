@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<!-- /*  
+                   _     _                 __                                    
+                  | |   (_)               / _|                                   
+ _ __ ___    __ _ | | __ _  _ __    __ _ | |_  _   _  _ __     __  __ _   _  ____
+| '_ ` _ \  / _` || |/ /| || '_ \  / _` ||  _|| | | || '_ \    \ \/ /| | | ||_  /
+| | | | | || (_| ||   < | || | | || (_| || |  | |_| || | | | _  >  < | |_| | / / 
+|_| |_| |_| \__,_||_|\_\|_||_| |_| \__, ||_|   \__,_||_| |_|(_)/_/\_\ \__, |/___|
+                                    __/ |                              __/ |     
+                                   |___/                              |___/      
+*/ -->
+<view class="container">
+  <view>
+  <text>微信智能小管家</text>
+  </view>
+
+  <!--index.wxml-->
+<view class="container">
+  <ec-canvas style="width: 450px; height: 500px;" id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<view>
+  <text class='show' >{{esp8266.state}}</text>
+  </view>
+
+  <view class='led-container'>
+    <image src="{{LEDValue[0].LEDlogo}}" class='led-logo'></image>
+  </view>
+
+  <view>
+    <button type="defaule" size="mini" bindtap="LedControl">{{LEDValue[0].ButtonValue}}</button>
+  </view>
+  <view>
+    <image src='./../images/devil.png' class='logo'></image>
+  </view>
+  <view class='bottom-text'>
+  <text>杨大爷一号物联网</text>
+  </view>
+  <view>
+    <text>© 2019 imliubo</text>
+  </view>
+</view>
